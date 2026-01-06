@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            /* Specific overrides for Advanced Page layout */
+            .advanced-form {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                margin-top: 50px;
+            }
+            .form-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                align-items: center;
+            }
+            .form-label {
+                font-family: arial, sans-serif;
+                font-size: 13px;
+            }
+            .blue-btn {
+                background-color: #4d90fe;
+                color: white;
+                font-weight: bold;
+                border: 1px solid #3079ed;
+                float: right;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <a href="index.html">Google Search</a>
+        </div>
+
+        <div style="padding: 30px">
+            <h3
+                style="
+                    color: #d93025;
+                    font-family: arial, sans-serif;
+                    font-size: 20px;
+                "
+            >
+                Advanced Search
+            </h3>
+            <hr />
+
+            <form action="https://www.google.com/search" class="advanced-form">
+                <div class="form-row">
+                    <span class="form-label"
+                        >Find pages with...
+                        <strong>all these words:</strong></span
+                    >
+                    <input type="text" name="as_q" />
+                </div>
+                <div class="form-row">
+                    <span class="form-label"
+                        >this <strong>exact word or phrase:</strong></span
+                    >
+                    <input type="text" name="as_epq" />
+                </div>
+                <div class="form-row">
+                    <span class="form-label"
+                        ><strong>any of these words:</strong></span
+                    >
+                    <input type="text" name="as_oq" />
+                </div>
+                <div class="form-row">
+                    <span class="form-label"
+                        ><strong>none of these words:</strong></span
+                    >
+                    <input type="text" name="as_eq" />
+                </div>
+
+                <div style="margin-top: 20px">
+                    <input
+                        type="submit"
+                        value="Advanced Search"
+                        class="blue-btn"
+                    />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
